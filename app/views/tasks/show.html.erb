@@ -1,0 +1,13 @@
+<h1><%= @taskShow.title %></h1>
+
+<div class="detailShow">
+  <%= @taskShow.details %>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <%= "checked" if @taskShow.completed == true %> >
+  <label class="form-check-label" for="flexCheckDefault">
+    Marcar como completado
+  </label>
+</div>
+<%= link_to "Regresar a la lista", :back %>

@@ -1,0 +1,13 @@
+<h1>New Task</h1>
+<form action="create" method = "POST">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <div class="mb-3">
+    <input type="text" name="title" class="form-control" placeholder="Nombre de la Tarea">
+  </div>
+  <div class="mb-3">
+    <textarea class="form-control" name="details" rows="3" placeholder="Agregue un detalle a la tarea"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
+
+<%= link_to  "Regresar a la lista", :back %>
